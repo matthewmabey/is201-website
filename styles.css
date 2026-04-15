@@ -1,0 +1,289 @@
+/* IS201 Web Project stylesheet */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+a {
+  color: #0f4c81;
+}
+
+a:hover {
+  color: #0a2f50;
+}
+
+a:visited {
+  color: #5a3f8c;
+}
+
+.topbar {
+  background: #0b1f33;
+  color: #e7edf5;
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.site-nav {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  background: #12395d;
+  z-index: 1000;
+  border-bottom: 3px solid #0a2f50;
+}
+
+.nav-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.brand {
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  color: #dcecff;
+}
+
+.hero {
+  max-width: 1100px;
+  margin: 130px auto 30px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr;
+  gap: 24px;
+}
+
+.hero-text h1,
+.page-header h1 {
+  margin-top: 0;
+  line-height: 1.15;
+  font-size: 42px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #245b8c;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.card,
+.mini-card {
+  background: white;
+  border: 1px solid #d7e1ec;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(12, 33, 58, 0.08);
+}
+
+.card {
+  padding: 24px;
+}
+
+.hero-card {
+  position: relative;
+  text-align: center;
+}
+
+.badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: #ffd66b;
+  color: #4a3410;
+  font-weight: bold;
+  padding: 7px 11px;
+  border-radius: 999px;
+  border: 1px solid #dcb24d;
+}
+
+.button-row {
+  margin-top: 22px;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  background: #12395d;
+  color: white !important;
+  padding: 12px 18px;
+  border-radius: 10px;
+  margin-right: 10px;
+  border: 2px solid #12395d;
+}
+
+.button-secondary {
+  background: white;
+  color: #12395d !important;
+}
+
+.content-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+}
+
+.page-space {
+  margin-top: 110px;
+}
+
+.section {
+  margin-bottom: 24px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.mini-card {
+  padding: 20px;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 24px;
+}
+
+.feature-list {
+  padding-left: 20px;
+}
+
+.spotlight {
+  background: linear-gradient(180deg, #ffffff 0%, #eef5fc 100%);
+}
+
+.callout {
+  margin-top: 14px;
+  padding: 14px;
+  background: #e9f3ff;
+  border-left: 4px solid #1a67aa;
+  border-radius: 8px;
+}
+
+.float-image {
+  float: right;
+  margin: 0 0 15px 20px;
+  border: 1px solid #d7e1ec;
+  border-radius: 14px;
+  background: #fafcff;
+  padding: 8px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.relative-box {
+  position: relative;
+  padding-top: 38px;
+}
+
+.corner-note {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: #12395d;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.career-table {
+  border: 1px solid #d7e1ec;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr;
+}
+
+.row > div {
+  padding: 14px 16px;
+  border-top: 1px solid #d7e1ec;
+}
+
+.row-head {
+  background: #12395d;
+  color: white;
+  font-weight: bold;
+}
+
+.row-head > div {
+  border-top: none;
+}
+
+.back-top {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  background: #12395d;
+  color: white !important;
+  text-decoration: none;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  box-shadow: 0 10px 24px rgba(12, 33, 58, 0.18);
+  z-index: 999;
+}
+
+.footer {
+  text-align: center;
+  color: #506174;
+  padding: 20px;
+}
+
+@media (max-width: 900px) {
+  .hero,
+  .two-column,
+  .card-grid,
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links a {
+    margin: 0 14px 0 0;
+    display: inline-block;
+  }
+}
